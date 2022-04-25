@@ -2,9 +2,13 @@ SLASH_ACHIEVE1 = "/ar"
 
 local function AchieveR()
     local wow = ""
+    --Removes world events and feats of strength from pool
+    local cancelList = {160,187,159,163,161,15274,162,15268,158.155,156,81,15234}
     local check = 0
+    local cateCheck = 0
     local idTable = GetCategoryList()
     while check == 0 do
+        cateCheck = 0
         local category = math.random(1,#idTable)
         local __, __, incomplete = GetCategoryNumAchievements(idTable[category])
         if incomplete ~= 0 then
@@ -12,9 +16,18 @@ local function AchieveR()
             local index = math.random(1,incomplete)
             local id, ach, __, comp, __, __, __, desc, __, __, __, __, __, __, __ = GetAchievementInfo(categoryID, index)
             if not comp then
-                wow = wow .. ach .. "\n" .. desc
-                AddTrackedAchievement(id)
-                check = 1
+                --check that category is not in cancelled list
+                for i=1,#cancelList do
+                    if categoryID == cancelList[i] then
+                        cateCheck = 1
+                    end
+                end
+                --if everything is clear, use this achievement
+                if cateCheck == 0 then
+                    wow = wow .. ach .. "\n" .. desc
+                    AddTrackedAchievement(id)
+                    check = 1
+                end
             end
         end
     end
