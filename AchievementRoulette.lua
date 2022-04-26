@@ -24,7 +24,7 @@ local function AchieveR()
                 end
                 --if everything is clear, use this achievement
                 if cateCheck == 0 then
-                    wow = wow .. ach .. "\n" .. desc
+                    wow = wow .. ach .. "\n" .. desc .. "\n\nhttps://www.wowhead.com/achievement=" .. id .. "\n ^ Copy this into your browser, and look in comments for additional information."
                     AddTrackedAchievement(id)
                     check = 1
                 end
