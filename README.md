@@ -10,3 +10,7 @@ WoW addon that gives the user a random achievement to complete!
 - Achievement will be automatically added to your tracked list.
 - Simply rerun the command to get a new random achievement.
 - Enjoy!
+
+## Notes
+- World events/Feats of strength/Legacy Achievements have all been disabled
+- World events will be re-enabled during the duration of the world event
