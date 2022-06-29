@@ -3,6 +3,7 @@ SLASH_ACHIEVE1 = "/ar"
 local function AchieveR()
     local wow = ""
     --Removes world events and feats of strength from pool
+    -- 160 Lunar Festival
     local cancelList = {160,187,159,163,161,15274,162,15268,158.155,156,81,15234}
     local check = 0
     local cateCheck = 0
