@@ -4,7 +4,21 @@ local function AchieveR()
     local wow = ""
     --Removes world events and feats of strength from pool
     -- 160 Lunar Festival
-    local cancelList = {160,187,159,163,161,15274,162,15268,158.155,156,81,15234}
+    -- 187 Love is in the Air
+    -- 159 Noblegarden
+    -- 163 Children's Week
+    -- 161 Midsummer (REMOVED)
+    -- 15274 Events
+    -- 162 Brewfest
+    -- 15268 Promotions
+    -- 158 Hallow's End
+    -- 14981 Pilgrim's Bounty
+    -- 15416 & 155 World Events
+    -- 156 Winter Veil
+    -- 81 Feats of Strength
+    -- 15234 Legacy
+    
+    local cancelList = {160,187,159,163,15274,162,15268,158,155,156,81,15234,14981,15416}
     local check = 0
     local cateCheck = 0
     local idTable = GetCategoryList()
