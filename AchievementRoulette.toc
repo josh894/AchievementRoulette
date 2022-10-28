@@ -1,4 +1,4 @@
-## Interface: 900000
+## Interface: 100000
 ## Title: AchievementRoulette
 ## Notes: Gives the user a random achievement to complete.
 ## Author: josh894
