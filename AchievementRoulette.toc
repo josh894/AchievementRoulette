@@ -1,7 +1,7 @@
-## Interface: 90207
+## Interface: 900000
 ## Title: AchievementRoulette
 ## Notes: Gives the user a random achievement to complete.
 ## Author: josh894
-## Version: 9.2.7
+## Version: 10.0.0
 
 AchievementRoulette.lua
